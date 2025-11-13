@@ -49,6 +49,7 @@
 }
 
 .clear {
+  background-color: rgb(220, 50, 50);
   margin-top: 1em;
   width: min-content;
   height: min-content;
