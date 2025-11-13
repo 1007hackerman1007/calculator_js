@@ -1,6 +1,7 @@
 :root {
-    --calcBody: darkslategray;
+    --calcBody: rgb(59,59,59);
     --calcDisplay: grey;
+    --calcFrame: rgb(60,60,60);
 }
 
 .cBody {
@@ -16,4 +17,18 @@
     height: 30%;
     background-color: var(--calcDisplay);
     border-radius: 6px;
+}
+
+.cFrame {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    background-color: var(--calcFrame);
+    height: 60dvh;
+}
+
+.button {
+    padding: 1em;
+    color: blue;
+    font-size: 2em;
+    border: 1px 
 }
