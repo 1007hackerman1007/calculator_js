@@ -2,6 +2,10 @@
     --calcBody: rgb(59,59,59);
     --calcDisplay: grey;
     --calcFrame: rgb(60,60,60);
+		--operations: rgb(10, 150, 150);
+		--numerical: rgb(10, 120, 120);
+		--equals: rgb(10, 180, 180);
+
 }
 
 .cBody {
@@ -20,15 +24,32 @@
 }
 
 .cFrame {
-    display: grid;
+    display: inline-grid;
+		padding: 1em;
     grid-template-columns: auto auto auto auto;
     background-color: var(--calcFrame);
-    height: 60dvh;
+		justify-items: center;
 }
 
 .button {
-    padding: 1em;
-    color: blue;
-    font-size: 2em;
-    border: 1px 
+		margin: 0.8em 2em;
+		padding: .5em 1.2em .5em 1.2em;
+		background-color: var(--operations);
+		border-radius: 350px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+		font-size: 2.2em;
+		align-items: center;
+}
+
+.button:hover {
+	color: aliceblue;
+	scale: 0.98;
+}
+
+.number {
+	background-color: var(--numerical);
+}
+
+.equals {
+	background-color: var(--equals);
 }
