@@ -10,11 +10,11 @@ function clickHandler(key) {
 }
 
 function calculate() {
-    operation = operations.innerHTML
+    let operation = operations.innerHTML
+    operation = operation.replaceAll("x", "*")
+    operation = operation.replaceAll("÷", "/")
     
-    console.log(operations.innerHTML)
-    result.innerHTML = eval(operations.innerHTML)
-    operations.innerHTML = ""
+    operations.innerHTML = eval(operation)
 }
 
 function addSymbol(key) {

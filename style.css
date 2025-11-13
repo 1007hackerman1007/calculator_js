@@ -13,7 +13,12 @@
     height: 90vh;
     background-color: var(--calcBody);
     border-radius: 6px;
-    padding: 1% 1%;
+    padding: 1em 1em;
+}
+
+.separator {
+  display: inline-grid;
+  grid-template-columns: auto auto;
 }
 
 .cDisplay {
@@ -21,6 +26,7 @@
     height: 30%;
     background-color: var(--calcDisplay);
     border-radius: 6px;
+    font-size: 5em;
 }
 
 .cFrame {
@@ -31,6 +37,7 @@
 		justify-items: center;
 }
 
+.clear,
 .button {
 		margin: 0.8em 2em;
 		padding: .5em 1.2em .5em 1.2em;
@@ -41,6 +48,13 @@
 		align-items: center;
 }
 
+.clear {
+  margin-top: 1em;
+  width: min-content;
+  height: min-content;
+}
+
+.clear:hover,
 .button:hover {
 	color: aliceblue;
 	scale: 0.98;
